@@ -1,0 +1,6 @@
+attrs>=19.2.0
+pytest
+pytest-cov
+pytest-mock
+pytruth
+hypothesis
