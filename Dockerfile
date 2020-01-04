@@ -7,7 +7,8 @@ LABEL "com.github.actions.color"="yellow"
 
 RUN apk add --no-cache bash
 RUN pip install --upgrade pip
-RUN pip install pytest
+ADD ./requirements.txt /
+RUN pip install -r requirements.txt
 RUN python --version ; pip --version ; pytest --version
 
 COPY entrypoint.sh /
